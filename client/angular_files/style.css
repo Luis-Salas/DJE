@@ -104,7 +104,7 @@ footer.page-footer{
 .row .col.m5{
  width: 75%;
 }
-.slider .slides {
+lider .slides {
    background-color: transparent;
    margin: 0;
    height: 900px;
@@ -163,23 +163,23 @@ footer.page-footer{
 }
 .collapsible.popout{
   padding-top:20px;
-  width:90%;
+  width:80%;
   margin:auto;
 }
 .description{
-  width: 100%;
+  width: 49.5%;
   display: inline-block;
   vertical-align: top;
   margin: auto;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 22px;
 }
 .equipment{
-  width: 100%;
+  width: 42.5%;
   display: inline-block;
   margin: auto;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 17px;
 }
 .packageCenter{
   background-color: #262228;
@@ -201,14 +201,15 @@ footer.page-footer{
   width: 100%;
   text-align: center;
 }
-.inconsContent{
-  width: 25%;
+.iconsContent{
+  width: 33%;
   text-align: center;
   display: inline-block;
 }
 .iconsMain h1{
   margin-bottom: 0px;
   margin-top:0px;
+  font-size: 2.5em;
 }
 /*#topimg{
   width:1700px;
@@ -218,3 +219,17 @@ footer.page-footer{
 .parallax-container {
  height: "3000";
 }*/
+
+@media all and (max-width: 480px) {
+  .iconsContent{
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+  }
+  .collapsible.popout{
+    padding-top:20px;
+    width:100%;
+    margin:auto;
+  }
+
+}
