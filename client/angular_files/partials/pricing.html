@@ -1,0 +1,100 @@
+<script>
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+  $('.carousel').carousel();
+});
+</script>
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#gold">Gold</a></li>
+  <li><a href="#diamond">Diamond</a></li>
+  <li><a href="#vip">V.I.P</a></li>
+</ul>
+<div class="navbar-fixed">
+  <nav>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <div class="nav-wrapper grey darken-4 hoverable">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#!/contact">Contact</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Packages<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </div>
+  <ul class="side-nav" id="mobile-demo">
+    <li><a class="subheader">Links</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/info">Contact</a></li>
+    <li><a href="/gallery">Gallery</a></li>
+    <li class="divider"></li>
+    <li><a class="subheader">Packages</a></li>
+    <li><a href="#gold">Gold</a></li>
+    <li><a href="#diamond">Diamond</a></li>
+    <li><a href="#vip">V.I.P</a></li>
+  </ul>
+</nav>
+<div id="packageWrapper">
+  <div class="centerh1">
+    <h1>All packages include</h1>
+  </div>
+  <div class="iconsMain">
+    <div class="iconsContent">
+      <img src="/public/images/music.png">
+      <h1>Music</h1>
+      <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+    </div>
+    <div class="iconsContent">
+      <img src="/public/images/play.png">
+      <h1>Slideshow</h1>
+      <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+    </div>
+    <div class="iconsContent">
+      <img src="/public/images/contract.png">
+      <h1>Reliable</h1>
+      <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+    </div>
+  </div>
+
+  <div class="centerh1">
+    <h1>Packages</h1>
+  </div>
+<ul class="collapsible popout" data-collapsible="accordion">
+  <li>
+    <div class="collapsible-header active" style="background-color:#FFD106
+;">Gold</div>
+    <div class="collapsible-body">
+      <div class="packageCenter">
+        <div class="packageTop">
+          <div class="description">
+            <h4>Description</h4>
+            <p>Great for small events anywhere from 50-150 people. These events consist of backyard parties, birthday parties Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi eu laoreet ornare, sapien ipsum maximus mauris, sit amet rutrum ante neque nec nunc</p>
+          </div>
+          <div class="equipment">
+            <h4>List of equipment</h4>
+            2 Subwoofers and 2 speakers<br>
+            1 Pioneer DDJ-SZ controller<br>
+            1 DJ Booth<br>
+            1 Led bar Light<br>
+            2 Global Truss<br>
+            2 50' Hd tvs<br>
+            2 Vizi RXONE Moving Heads<br>
+            2 ADJ Stinger Mooflower<br>
+            2 ADJ Mega Par(Uplighting)<br>
+            1 Wireless microphone<br>
+            Complimentary slide show
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header" style="background-color: #99e6e6
+;">Diamond</div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+  <li>
+    <div class="collapsible-header">V.I.P</div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+</ul>
+</div>
