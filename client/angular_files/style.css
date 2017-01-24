@@ -91,9 +91,8 @@ footer.page-footer{
  display: inline-block;
 }
 .videoRow{
- width: 50%;
+ width: 100%;
  margin: auto;
- margin-top: 8em;
 }
 .slides li img {
  height: 200%;
@@ -234,5 +233,4 @@ lider .slides {
   video {
     height: 202px;
   }
-
 }
