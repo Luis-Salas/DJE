@@ -231,5 +231,8 @@ lider .slides {
     width:100%;
     margin:auto;
   }
+  video {
+    height: 202px;
+  }
 
 }
