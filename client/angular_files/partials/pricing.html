@@ -1,8 +1,12 @@
+
 <script>
+
 $(document).ready(function(){
   $('.collapsible').collapsible();
   $('.carousel').carousel();
-});
+  $(".button-collapse").sideNav();
+  });
+
 </script>
 <div class="navbar-fixed">
   <nav>
@@ -11,20 +15,15 @@ $(document).ready(function(){
       <ul class="right hide-on-med-and-down">
         <li><a href="/#!/">Home</a></li>
         <li><a href="/#!/contact">Contact</a></li>
-        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/#!/gallery">Gallery</a></li>
       </ul>
     </div>
   </div>
   <ul class="side-nav" id="mobile-demo">
     <li><a class="subheader">Links</a></li>
-    <li><a href="/">Home</a></li>
-    <li><a href="/info">Contact</a></li>
+    <li><a href="/#!/">Home</a></li>
+    <li><a href="/#!/contact">Contact</a></li>
     <li><a href="/gallery">Gallery</a></li>
-    <li class="divider"></li>
-    <li><a class="subheader">Packages</a></li>
-    <li><a href="#gold">Gold</a></li>
-    <li><a href="#diamond">Diamond</a></li>
-    <li><a href="#vip">V.I.P</a></li>
   </ul>
 </nav>
 <div id="packageWrapper">

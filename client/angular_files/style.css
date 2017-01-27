@@ -167,6 +167,12 @@ html {
   .socialMedia{
     width: 80%
   }
+  .form{
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+  }
+
 
 
 }
