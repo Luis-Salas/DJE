@@ -184,7 +184,11 @@ html {
     display: inline-block;
     margin: auto;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1em;
+    padding: 0px;
+  }
+  .collapsible-body p {
+    padding: 0px;
   }
 
 
