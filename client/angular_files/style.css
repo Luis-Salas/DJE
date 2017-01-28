@@ -83,14 +83,14 @@ html {
   vertical-align: top;
   margin: auto;
   text-align: center;
-  font-size: 22px;
+  font-size: 1em;
 }
 .equipment{
   width: 42.5%;
   display: inline-block;
   margin: auto;
   text-align: center;
-  font-size: 17px;
+  font-size: 1em;
 }
 .packageCenter{
   background-color: #262228;
@@ -172,6 +172,22 @@ html {
     text-align: center;
     margin-left: 5%;
   }
+  #nav{
+    z-index: 10;
+    position: relative;
+  }
+  #sidenav-overlay {
+    z-index: 9
+  }
+  .equipment{
+    width: 42.5%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+
 
 
 
