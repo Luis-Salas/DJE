@@ -43,8 +43,8 @@
  display: inline-block;
 }
 .image img{
-  width:400px;
-  height: 300px;
+  width:100%;
+  height: 100%;
 }
 .content{
  display: inline-block;
@@ -144,6 +144,10 @@
 
 
 @media all and (max-width: 480px) {
+  .image{
+   width: 100%;
+   display: inline-block;
+  }
   .iconsContent{
     width: 80%;
     text-align: center;
