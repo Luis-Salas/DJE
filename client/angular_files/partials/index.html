@@ -10,7 +10,6 @@
     $(".button-collapse").sideNav();
     $('.slider').slider({full_width: true});
   });
-
   </script>
   <div class="navbar-fixed">
     <nav>
@@ -30,7 +29,7 @@
       <li><a href="/gallery">Gallery</a></li>
     </ul>
   </nav>
-  <div id="indexWrapper">
+  <div id="indexWrapper" ng-controller="viewController as VC" ng-init="VC.index()">
     <div class="slider" height"800px">
       <ul class="slides" height"700px">
         <li>
@@ -56,6 +55,7 @@
         </li>
       </ul>
     </div>
+    <h5 class="counterTop">Page visits: {{VC.view[0].times}}</h5>
       <div class="center">
         <h1>Get to know Me </h1>
         <p class="flow-text">Ever since I was 18 I've been behind the mixer back when turntables didn't have all the features they do now. only those with an aptitude were able to DJ.After many years of playing at clubs, I'm still behind the mixer making normal parties to unforgettable nights.</p>

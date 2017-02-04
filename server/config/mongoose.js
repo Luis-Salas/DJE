@@ -3,7 +3,7 @@ const fs            = require('fs')
 const path          = require('path')
 const models_path   = path.join( __dirname, "../models")
 const reg           = new RegExp( ".js$", "i" )
-const dbURI         = 'mongodb://localhost/bucketList';
+const dbURI         = 'mongodb://localhost/DjEnriqueSalas';
 mongoose.connect( dbURI );
 mongoose.connection.on( 'connected', function () {
   console.log( `Mongoose default connection open to ${ dbURI }` );

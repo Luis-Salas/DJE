@@ -3,11 +3,15 @@
 
   angular
     .module('myApp')
-    .controller('userController', Controller)
+    .controller('viewController', Controller)
 
-  function Controller (userFactory, $location, $routeParams) {
+  function Controller (viewFactory,$location, $routeParams) {
     var self = this
-    self.login = function (){
-      console.log('kajhsflkasfojh')
+    self.index = function(){
+      viewFactory.index(function(returnData){
+      console.log(returnData)
+      self.view = returnData.data
+    })
   }
+}
 })()

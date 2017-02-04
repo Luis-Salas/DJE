@@ -16,6 +16,10 @@
     .when('/pricing', {
       templateUrl: 'angular_files/partials/pricing.html'
     })
+    .when('/gallery', {
+      templateUrl: 'angular_files/partials/gallery.html'
+    })
+
     .otherwise({
       redirectTo:'/'
     })

@@ -1,14 +1,5 @@
 @import "materialize";
 
-
-// nav .nav-wrapper {
-//     position: relative;
-//     height: 100px;
-// }
-
-html {
-   font-family: GillSans, Calibri, Trebuchet, sans-serif;
- }
 #bottom-quotes h1{
  text-align: center;
 }
@@ -45,16 +36,15 @@ html {
  position: absolute;
 }
 #galleryWrapper{
- height: 1600px;
- width:100%;
- text-align: center;
- display: inline;
+  text-align: center;
 }
-.GalleryRow{
- width: 100%;
- height: 600px;
+.image{
+ width: 33%;
  display: inline-block;
- position: relative;
+}
+.image img{
+  width:400px;
+  height: 300px;
 }
 .content{
  display: inline-block;
@@ -139,11 +129,18 @@ html {
   margin-left: 30%;
 }
 
-.socialMedia{
-  display: inline-block;
-  width: 33%;
-  margin: auto;
+.counterTop{
+  color:white;
+  margin-left: 75%;
 }
+.materialboxed{
+  display: inline-block;
+}
+.socialMedia{
+  width: 30%;
+  display: inline-block;
+}
+
 
 
 @media all and (max-width: 480px) {
@@ -190,9 +187,5 @@ html {
   .collapsible-body p {
     padding: 0px;
   }
-
-
-
-
 
 }
