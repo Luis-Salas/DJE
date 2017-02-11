@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Dj EnriqueSalas</title>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link rel="stylesheet" href="slicknav/dist/slicknav.css">
+
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize/dist/css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="/angular_files/style.css" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="materialize/dist/js/materialize.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="/angular/angular.js" charset="utf-8"></script>
     <script src="/angular-messages/angular-messages.js" charset="utf-8"></script>
     <script src="/angular-route/angular-route.js" charset="utf-8"></script>
@@ -21,7 +27,27 @@
     <script src="/angular_files/controllers/viewController.js" charset="utf-8"></script>
     <script src="/angular_files/factories/userFactory.js" charset="utf-8"></script>
     <script src="/angular_files/factories/viewFactory.js" charset="utf-8"></script>
+    <script src="materialize/dist/js/materialize.js"></script>
+    <script src="slicknav/dist/jquery.slicknav.js"></script>
+
     <script src="/public/scripts.js" charset="utf-8"></script>
+    <ul id="menu">
+        <li><a href="/#!/pricing">Prices</a></li>
+        <li><a href="/#!/contact">Contact</a></li>
+        <li><a href="/#!/gallery">Gallery</a></li>
+
+    </ul>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#menu').slicknav({
+          label: '',
+          duration: 1000,
+          easingOpen: "easeOutBounce", //available with jQuery UI
+          prependTo:'body'
+        });
+      });
+    </script>
+
     <div ng-view="">
     </div>
   </body>

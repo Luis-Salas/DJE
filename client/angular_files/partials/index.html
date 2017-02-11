@@ -7,27 +7,24 @@
 <body>
   <script>
   $(document).ready(function(){
-    $(".button-collapse").sideNav();
     $('.slider').slider({full_width: true});
+    $('#menu').slicknav({
+      label: '',
+      duration: 1000,
+      easingOpen: "easeOutBounce", //available with jQuery UI
+      prependTo:'body'
+    });
+
   });
   </script>
-  <div class="navbar-fixed">
-    <nav>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <div class="nav-wrapper indigo darken-4 hoverable">
-        <ul class="right hide-on-med-and-down">
-          <li><a href="/#!/contact">Contact</a></li>
-          <li><a href="/#!/gallery">Gallery</a></li>
+  <nav>
+      <div class="nav-wrapper indigo">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/#!/">Home</a></li>
           <li><a href="/#!/pricing">Prices</a></li>
+          <li><a href="/#!/contact">Contact</a></li>
         </ul>
       </div>
-    </div>
-    <ul class="side-nav" id="mobile-demo">
-      <li><a class="subheader">Links</a></li>
-      <li><a href="/#!/contact">Contact</a></li>
-      <li><a href="/#!/pricing">Prices</a></li>
-      <li><a href="/#!/gallery">Gallery</a></li>
-    </ul>
   </nav>
   <div id="indexWrapper" ng-controller="viewController as VC" ng-init="VC.index()">
     <div class="slider" height"800px">
