@@ -12,37 +12,71 @@
         <li><a href="/#!/">Home</a></li>
         <li><a href="/#!/pricing">Prices</a></li>
         <li><a href="/#!/contact">Contact</a></li>
+        <ul class="section table-of-contents">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#initialization">Intialization</a></li>
+      </ul>
       </ul>
     </div>
   </nav>
     <div id="galleryWrapper">
     <h1>Gallery</h1>
     <h4>Gold Package Photos</h4>
-    <div class="image">
-      <img class="materialboxed" width="650" src="public/images/May 8.jpg">  </div>
-    <div class="image">
-      <img class="materialboxed" width="650" src="public/images/Oct 2.jpg">  </div>
-    <div class="image">
-      <img class="materialboxed" width="650" src="public/images/may1.jpg">  </div>
 
-    <h4>diamond Package Photos</h4>
-    <div class="image">
-      <img class="materialboxed" width="650" src="public/images/oct12.jpg">  </div>
-    <div class="image">
-      <img class="materialboxed" width="650" src="public/images/aug1.jpg">  </div>
-    <div class="image">
-      <img class="materialboxed" width="650" src="public/images/aug20.jpg">  </div>
-
-    <h4>V.I.P Package Photos</h4>
-    <div class="image">
-      <img class="materialboxed" width="650" src="public/images/may2.jpg">  </div>
-    <div class="image">
-      <img class="materialboxed" width="650" src="public/images/vip1.jpg">  </div>
-    <div class="image">
-      <img class="materialboxed" width="650" src="public/images/vip4.jpg">  </div>
+    <div id="gold" class="section scrollspy">
+      <div class="image">
+        <img class="materialboxed" width="650" src="public/images/May 8.jpg">  </div>
+      <div class="image">
+        <img class="materialboxed" width="650" src="public/images/Oct 2.jpg">  </div>
+      <div class="image">
+        <img class="materialboxed" width="650" src="public/images/may1.jpg">  </div>
     </div>
+
+    <div id="diamond" class="section scrollspy">
+      <h4>diamond Package Photos</h4>
+      <div class="image">
+        <img class="materialboxed" width="650" src="public/images/oct12.jpg">  </div>
+      <div class="image">
+        <img class="materialboxed" width="650" src="public/images/aug1.jpg">  </div>
+      <div class="image">
+        <img class="materialboxed" width="650" src="public/images/aug20.jpg">  </div>
+    </div>
+
+    <div id="vip" class="section scrollspy">
+      <h4>V.I.P Package Photos</h4>
+      <div class="image">
+        <img class="materialboxed" width="650" src="public/images/may2.jpg">  </div>
+      <div class="image">
+        <img class="materialboxed" width="650" src="public/images/vip1.jpg">  </div>
+      <div class="image">
+        <img class="materialboxed" width="650" src="public/images/vip4.jpg">  </div>
+    </div>
+
+  <h4>Quinceañera Photos</h4>
+  <div id="xv" class="section scrollspy">
+
+    <div class="image">
+      <img class="materialboxed" width="650" src="public/images/xv1.jpg">  </div>
+    <div class="image">
+      <img class="materialboxed" width="650" src="public/images/xv5.jpg">  </div>
+    <div class="image">
+      <img class="materialboxed" width="650" src="public/images/xv3.jpg">  </div>
+    <div class="image">
+      <img class="materialboxed" width="650" src="public/images/xv4.jpg">  </div>
+    <div class="image">
+      <img class="materialboxed" width="650" src="public/images/xv2.jpg">  </div>
+    <div class="image">
+      <img class="materialboxed" width="650" src="public/images/xv6.jpg">  </div>
+    <div class="image">
+      <img class="materialboxed" width="650" src="public/images/xv7.jpg">  </div>
+    <div class="image">
+      <img class="materialboxed" width="650" src="public/images/xv8.jpg">  </div>
+    <div class="image">
+      <img class="materialboxed" width="650" src="public/images/xv10.jpg">  </div>
   </div>
 </div>
+
 <script type="text/javascript">
   $(document).ready(function(){
     $('#menu').slicknav({
@@ -51,6 +85,8 @@
       easingOpen: "easeOutBounce", //available with jQuery UI
       prependTo:'body'
     });
+    $('.scrollspy').scrollSpy();
+
   });
 </script>
 </body>
