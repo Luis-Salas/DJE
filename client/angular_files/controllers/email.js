@@ -5,11 +5,14 @@
     .module('myApp')
     .controller('MailController', Controller)
 
-  function Controller (MailFactory, $location, $routeParams) {
+  function Controller (MailFactory, $location, $routeParams, $scope) {
     var self = this
     self.mail = function(){
-      MailFactory.mail(self.info,function(returnData){
-        console.log(returnData)
+      console.log('hello')
+      console.log(self.email)
+      MailFactory.mail(self.email,function(returnData){
+        self.email = {}
+        self.verify = returnData.data
       })
     }
 }
