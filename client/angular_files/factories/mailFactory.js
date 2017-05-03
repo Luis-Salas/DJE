@@ -9,8 +9,9 @@
 
     factory.mail = function(mailInfo,callback){
       console.log(mailInfo)
-      $http.post('/mail', mailInfo).then(function(returnData){
-        callback(returnData)
+      $http.post('/mail', mailInfo).then(function(response){
+        console.log(response)
+        callback(response)
       })
     }
     return factory
