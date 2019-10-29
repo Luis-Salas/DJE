@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const session = require('express-session');
-const app = require('express');
+const app = require('express')()
 
 app.use(session({
   secret: 'tacocat',
