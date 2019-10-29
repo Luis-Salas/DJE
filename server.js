@@ -3,9 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const session = require('express-session');
-const app = require('express')(),
-  mailer = require('express-mailer');
-
+const app = require('express');
 
 app.use(session({
   secret: 'tacocat',
