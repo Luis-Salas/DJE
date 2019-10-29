@@ -17,7 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname + path.join("/client")));
 app.use(express.static(__dirname + path.join("/bower_components")));
 
-
+require('./server/config/mongoose.js')
+require('./server/config/routes.js')(app)
 
 app.listen(process.ENV, function(){
   console.log('you know the drill')
